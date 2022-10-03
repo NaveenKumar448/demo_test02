@@ -1,12 +1,14 @@
-name: Demo simple github workflow
+name: Demo simple pytest workflow
 on: push
 jobs:
-      name: Ubuntu OS runner image
-       runs-on:ubuntu-latest
-        steps:
-              -name: Checking code
-              uses:actions/checkout@v2
-      
+      pytest-sample:
+            name: Ubuntu OS
+            runs-on: ubuntu-latest
+            steps:
+                  - name: Checking the code
+                    uses: actions/checkout@v3
+
+
                  
             
 
