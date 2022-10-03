@@ -1,0 +1,14 @@
+name: Demo simple github workflow
+on: push
+    branch: main
+jobs: 
+    name: Ubuntu OS runner image
+    runs-on: ubuntu-latest
+    steps:
+          -name: Checking code
+           uses: actions/checkout@v2
+           with:
+                 python-version: '3.10'
+                 
+            
+           
